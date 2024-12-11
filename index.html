@@ -258,7 +258,7 @@ function confirmWin(v1, v2, v3, v4, v5) {
 function hasWon() {
 	/*hide confirmation, display Win message*/
 	winSeq = true;
-	$( "#confirmation" ).toggle( "slow" ).alert("You clicked "+ whichSquare);
+	$( "#confirmation" ).toggle( "slow" );
 /* 	$( "#winMsg" ).empty(); */ $( "#winMsg" ).prepend( "<h1>B I N G O!<br/>🏆</h1>");
 	$( "#winMsg" ).toggle( "slow" );
 	$( "body" ).addClass( "win" );
