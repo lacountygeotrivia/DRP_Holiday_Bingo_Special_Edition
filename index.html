@@ -259,7 +259,9 @@ function hasWon() {
 	/*hide confirmation, display Win message*/
 	winSeq = true;
 	$( "#confirmation" ).toggle( "slow" );
-/* 	$( "#winMsg" ).empty(); */ $( "#winMsg" ).prepend( "<h1>B I N G O!<br/>🏆</h1>");
+/* 	$( "#winMsg" ).empty(); */ $( "#winMsg" ).prepend( "<h1>B I N G O!<br/>🏆</h1><audio style="display:none;" controls autoplay>
+      <source src="https://lacountygeotrivia.github.io/gisday-2022/ta-da.mp3" type="audio/mpeg">
+      </audio>");
 	$( "#winMsg" ).toggle( "slow" );
 	$( "body" ).addClass( "win" );
 };
@@ -499,9 +501,6 @@ console.log(arr);
    <section id="winMsg"> <!--<a href="https://twitter.com/share" class="twitter-share-button" data-text="B I N G O !" data-url="http://www.geekymuse.com/bingo/got-bingo.html" data-via="donnemo" data-hashtags="gotbingo #GoT #GameOfThronesBingo #Bingo" data-show-count="false">Bingo!</a>--> </section>
    <section id="confirmation" style="display: none">
       <h3>Confirm your winning sequence:</h3>
-      <audio style="display:none;" controls autoplay>
-      <source src="https://lacountygeotrivia.github.io/gisday-2022/ta-da.mp3" type="audio/mpeg">
-      </audio>
       <table id="confirmMatrix">
          <tbody>
             <tr>
