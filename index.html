@@ -259,9 +259,7 @@ function hasWon() {
 	/*hide confirmation, display Win message*/
 	winSeq = true;
 	$( "#confirmation" ).toggle( "slow" );
-/* 	$( "#winMsg" ).empty(); */ $( "#winMsg" ).prepend( "<h1>B I N G O!<br/>🏆</h1><audio style="display:none;" controls autoplay>
-      <source src="https://lacountygeotrivia.github.io/gisday-2022/ta-da.mp3" type="audio/mpeg">
-      </audio>");
+/* 	$( "#winMsg" ).empty(); */ $( "#winMsg" ).prepend( "<h1>B I N G O!<br/>🏆</h1>");
 	$( "#winMsg" ).toggle( "slow" );
 	$( "body" ).addClass( "win" );
 };
