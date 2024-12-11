@@ -477,7 +477,7 @@ console.log(arr);
 	$('#confirmMatrix input[type=checkbox]').click(function(){
 		 	// which square was clicked?
 		var whichSquare = $(this).val();
-		//alert("You clicked "+ whichSquare);
+		alert("You clicked "+ whichSquare);
 		// confirm the winning sequence
 		if ($('#v1:checked,#v2:checked,#v3:checked,#v4:checked,#v5:checked').length == 5) {
         	hasWon();
